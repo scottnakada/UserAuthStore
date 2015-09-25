@@ -22,7 +22,7 @@
                 $scope.ios = {
                     link: "#ios",
                     image: "images/iPadUserAuthStore.png",
-                    ionicViewId: "43FF8114"
+                    ionicViewId: "E993A8E0"
                 };
                 $scope.github = {
                     link: "https://github.com/scottnakada/UserAuthStore"
@@ -32,8 +32,8 @@
                 $scope.platforms = {
                     web: true,
                     mean: true,
-                    android: false,
-                    ios: false,
+                    android: true,
+                    ios: true,
                     arduino: false,
                     raspberryPi: false,
                     intelEdison: false

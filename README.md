@@ -8,12 +8,12 @@
       <a href="http://yomongoauthstore.herokuapp.com/index.html">
               <img src="images/LaptopMongoAuthStore.png" width="35%">
             </a>
-      <!-- <a href="http://www.amazon.com/Ionic-Firebase-User-Authentication-App/dp/B014LUR2HI/ref=sr_1_1?s=mobile-apps&ie=UTF8&qid=1440823545&sr=1-1&keywords=ionFireAuth">
+      <a href="http://www.amazon.com/Ionic-Firebase-User-Authentication-App/dp/B014LUR2HI/ref=sr_1_1?s=mobile-apps&ie=UTF8&qid=1440823545&sr=1-1&keywords=ionFireAuth">
         <img src="images/AndroidUserAuthStore.png" width="10%">
       </a>&nbsp;&nbsp;&nbsp;
       <a href="http://scottnakada.github.io/UserAuthStore/#ios">
         <img src="images/iPadUserAuthStore.png" width="15%">
-      </a> -->
+      </a>
     </center>
   <br>
 
@@ -63,7 +63,6 @@
           On the <a href="http://yomongoauthstore.herokuapp.com/index.htm">web</a>,
           connected to a Mongo DB database:<br><br>
         </li>
-        <!--
         <li>
           <a href="http://www.amazon.com/Ionic-Firebase-User-Authentication-App/dp/B014LUR2HI/ref=sr_1_1?s=mobile-apps&ie=UTF8&qid=1440823545&sr=1-1&keywords=ionFireAuth">
             <img src="images/AndroidUserAuthStore.png" height="200px"/>
@@ -78,9 +77,8 @@
             <img src="images/iPadUserAuthStore.png" height="200px"/>
           </a>
           On Apple devices (iPhone/iPad), by downloading an app called Ionic View, and selecting the
-          app id: <a href="http://scottnakada.github.io/UserAuthStore/index.html#ios">43FF8114</a>. See the next section for directions
+          app id: <a href="http://scottnakada.github.io/UserAuthStore/index.html#ios">E993A8E0</a>. See the next section for directions
           to try the app.<br><br>
         </li>
-        -->
       </ol>
     </h4>
