@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.ionfireauthstore445330" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.quickstartprototypes.ionfireauthstore" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>ionFireAuthStore</name>
   <description>
-        An Ionic Framework and Cordova project.
+        An Ionic Firebase Shopping Cart with Social Media Authentication Demo
     </description>
-  <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
+  <author email="scottnakada@gmail.com" href="http://www.quickstartprototypes.com/">
+      Quickstart Prototypes/Scott Nakada
     </author>
   <content src="index.html"/>
   <access origin="*"/>

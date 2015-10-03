@@ -16,7 +16,7 @@
                     image: "images/LaptopMongoAuthStore.png"
                 };
                 $scope.android = {
-                    link: "http://www.amazon.com/Ionic-Firebase-User-Authentication-App/dp/B014LUR2HI/ref=sr_1_1?s=mobile-apps&ie=UTF8&qid=1440823545&sr=1-1&keywords=ionFireAuth",
+                    link: "http://www.amazon.com/Shopping-Authorization-using-Ionic-Firebase/dp/B015TPUMMQ/ref=sr_1_3?ie=UTF8&qid=1443836085&sr=8-3&keywords=quickstart+prototypes",
                     image: "images/AndroidUserAuthStore.png"
                 };
                 $scope.ios = {

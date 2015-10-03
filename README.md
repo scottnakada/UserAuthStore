@@ -8,7 +8,7 @@
       <a href="http://yomongoauthstore.herokuapp.com/index.html">
               <img src="images/LaptopMongoAuthStore.png" width="35%">
             </a>
-      <a href="http://www.amazon.com/Ionic-Firebase-User-Authentication-App/dp/B014LUR2HI/ref=sr_1_1?s=mobile-apps&ie=UTF8&qid=1440823545&sr=1-1&keywords=ionFireAuth">
+      <a href="http://www.amazon.com/Shopping-Authorization-using-Ionic-Firebase/dp/B015TPUMMQ/ref=sr_1_3?ie=UTF8&qid=1443836085&sr=8-3&keywords=quickstart+prototypes">
         <img src="images/AndroidUserAuthStore.png" width="10%">
       </a>&nbsp;&nbsp;&nbsp;
       <a href="http://scottnakada.github.io/UserAuthStore/#ios">
@@ -64,11 +64,11 @@
           connected to a Mongo DB database:<br><br>
         </li>
         <li>
-          <a href="http://www.amazon.com/Ionic-Firebase-User-Authentication-App/dp/B014LUR2HI/ref=sr_1_1?s=mobile-apps&ie=UTF8&qid=1440823545&sr=1-1&keywords=ionFireAuth">
+          <a href="http://www.amazon.com/Shopping-Authorization-using-Ionic-Firebase/dp/B015TPUMMQ/ref=sr_1_3?ie=UTF8&qid=1443836085&sr=8-3&keywords=quickstart+prototypes">
             <img src="images/AndroidUserAuthStore.png" height="200px"/>
           </a>
           On Android devices through the
-          <a href="http://www.amazon.com/Ionic-Firebase-User-Authentication-App/dp/B014LUR2HI/ref=sr_1_1?s=mobile-apps&ie=UTF8&qid=1440823545&sr=1-1&keywords=ionFireAuth">
+          <a href="http://www.amazon.com/Shopping-Authorization-using-Ionic-Firebase/dp/B015TPUMMQ/ref=sr_1_3?ie=UTF8&qid=1443836085&sr=8-3&keywords=quickstart+prototypes">
             Amazon Apps Store
           </a>.
         </li>
