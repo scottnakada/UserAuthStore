@@ -7,7 +7,7 @@
     angular.module('yoFireAuthStoreApp')
 
         // Define the Auth Factory
-        .factory('Auth', function (FURL, $firebaseAuth, $firebaseObject, $firebaseArray, $location, toaster) {
+        .factory('Auth', function (FURL, $firebaseAuth, $firebaseObject, $firebaseArray, $state, toaster) {
             // Define some factory constants
             // Open the Firebase Database
             var ref = new Firebase(FURL);
@@ -62,7 +62,7 @@
                     )
                         .then(function (authData) {
                             toaster.pop('success', "Logged in successfully");
-                            $location.path('/home');
+                            $state.go('main');
                         })
                         .catch(function (error) {
                             toaster.pop('error', "Failed to log in: error =", error);
@@ -84,7 +84,7 @@
                                 email: authData.facebook.email
                             };
                             Auth.createProfile(authData.uid, Auth.tmpUser, 'facebook');
-                            $location.path('/home');
+                            $state.go('main');
                         })
                         .catch(function (error) {
                             toaster.pop('error', "Failed to log into Facebook: error =", error);
@@ -106,7 +106,7 @@
                             };
                             Auth.createProfile(authData.uid, Auth.tmpUser, 'google');
                             toaster.pop('success', "Logged into Google successfully");
-                            $location.path('/home');
+                            $state.go('main');
                         })
                         .catch(function (error) {
                             toaster.pop('error', "Failed to log into Google: error =", error);
@@ -128,7 +128,7 @@
                             };
                             Auth.createProfile(authData.uid, Auth.tmpUser, 'twitter');
                             toaster.pop('success', "Logged into Twitter successfully");
-                            $location.path('/home');
+                            $state.go('main');
                         })
                         .catch(function (error) {
                             toaster.pop('error', "Failed to log into Twitter: error =", error);
@@ -150,7 +150,7 @@
                             };
                             Auth.createProfile(authData.uid, Auth.tmpUser, 'github');
                             toaster.pop('success', "Logged into Github successfully");
-                            $location.path('/home');
+                            $state.go('main');
                         })
                         .catch(function (error) {
                             toaster.pop('error', "Failed to log into Github: error =", error);
@@ -320,7 +320,7 @@
 
             });
 
-// Return a gravatar selected, based on email address
+            // Return a gravatar selected, based on email address
             function get_gravatar(email, size) {
 
                 email = email.toLowerCase();

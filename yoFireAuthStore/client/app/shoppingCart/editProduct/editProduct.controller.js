@@ -6,7 +6,7 @@
     /* Reference the main angular module */
     angular.module('yoFireAuthStoreApp')
         /* Define the EditProductCtrl controller */
-        .controller('EditProductCtrl', function ($scope, DataService, Auth, $location, toaster) {
+        .controller('EditProductCtrl', function ($scope, DataService, Auth, $state, toaster) {
 
             // Make sure the user is a manager before showing this page
             if (!Auth.isManager()) {
@@ -14,10 +14,10 @@
                 // See if they are signed In
                 if (!Auth.signedIn()) {
                     // Not logged in, go to the login page
-                    $location.path("/login");
+                    $state.go('login');
                 } else {
                     // Not authorized for this page; go back to the store
-                    $location.path("/store");
+                    $state.go('store');
                 }
             }
 

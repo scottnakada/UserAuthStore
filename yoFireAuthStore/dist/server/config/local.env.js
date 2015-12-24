@@ -7,7 +7,8 @@
 
 module.exports = {
   DOMAIN: 'http://localhost:9000',
-  SESSION_SECRET: "yofireauthstore-secret",
+  SESSION_SECRET: 'yofireauthstore-secret',
   // Control debug level for modules using visionmedia/debug
   DEBUG: ''
 };
+//# sourceMappingURL=local.env.js.map

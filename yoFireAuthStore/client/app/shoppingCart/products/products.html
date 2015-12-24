@@ -13,7 +13,7 @@
 
                     <tr class="well">
                         <td class="tdRight" colspan="3">
-                            <a href="/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
+                            <a ui-sref="cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
                                 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
                                 <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency}}</b>
                                 <span ng-show="cart.getTotalCount(product.sku) > 0"><br/>this item is in the cart</span>
@@ -49,7 +49,7 @@
 
                     <tr class="well">
                         <td class="tdRight" colspan="3">
-                            <a href="/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
+                            <a ui-sref="cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
                                 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
                                 <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency}}</b>
                                 <span ng-show="cart.getTotalCount(product.sku) > 0"><br/>this item is in the cart</span>

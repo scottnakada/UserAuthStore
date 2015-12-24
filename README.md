@@ -2,7 +2,7 @@
 
   <br>
     <center>
-      <a href="http://scottnakada.github.io/UserAuthStore/yoFireAuthStore/dist/public/index.html">
+      <a href="http://scottnakada.github.io/UserAuthStore/yoFireAuthStore/dist/client/index.html">
         <img src="images/LaptopFireAuthStore.png" width="35%">
       </a>
       <a href="http://yomongoauthstore.herokuapp.com/index.html">
@@ -50,10 +50,10 @@
       </p>
       <ol>
         <li>
-          <a href="http://scottnakada.github.io/UserAuthStore/yoFireAuthStore/dist/public/index.html">
+          <a href="http://scottnakada.github.io/UserAuthStore/yoFireAuthStore/dist/client/index.html">
             <img src="images/LaptopFireAuthStore.png" height="200px"/>
           </a>
-          On the <a href="http://scottnakada.github.io/UserAuthStore/yoFireAuthStore/dist/public/index.html">web</a>
+          On the <a href="http://scottnakada.github.io/UserAuthStore/yoFireAuthStore/dist/client/index.html">web</a>
           connected to a Firebase database:<br><br>
         </li>
         <li>

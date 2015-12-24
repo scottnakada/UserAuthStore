@@ -1,48 +1,58 @@
 'use strict';
 
-angular.module('yoFireAuthStoreApp')
-    .controller('NavbarCtrl', function ($scope, $location, Auth, toaster) {
+class NavbarController {
+    //start-non-standard
 
-        /* Define the Navbar Menu items */
-        $scope.menu = [
-            {
-                'title': 'Store',
-                'link': '/store'
-            },
-            {
-                'title': 'Cart',
-                'link': '/cart'
-            }
-        ];
+    /* Define the Navbar Menu items */
+    menu = [
+        {
+            'title': 'Store',
+            'state': 'store'
+        },
+        {
+            'title': 'Cart',
+            'state': 'cart'
+        }
+    ];
 
-        /* Is the Nav Bar collapsed? */
-        $scope.isCollapsed = true;
+    /* Is the Nav Bar collapsed? */
+    isCollapsed = true;
 
-        /* Is this route the selected route */
-        $scope.isActive = function (route) {
-            return route === $location.path();
-        };
+    /* Is this route the selected route */
+    isActive = function (route) {
+        return route === $location.path();
+    };
+
+    //end-non-standard
+
+    constructor($state, Auth, toaster) {
+
+        this.Auth = Auth;
 
         /* Pull in the current user information from the Auth Factory */
-        $scope.currentUser = Auth.user;
+        this.currentUser = Auth.user;
 
         /* Return true if the user is signed in */
-        $scope.signedIn = Auth.signedIn;
+        this.signedIn = Auth.signedIn;
 
         /* Return true if the user has Manager permissions (or Admin) */
-        $scope.isManager = Auth.isManager;
+        this.isManager = Auth.isManager;
 
         /* Return true if the user has Admin permissions */
-        $scope.isAdmin = Auth.isAdmin;
+        this.isAdmin = Auth.isAdmin;
 
         /* Return true if the user is a simple pass user, so changing password is ok */
-        $scope.changePassOk = Auth.changePassOk;
+        this.changePassOk = Auth.changePassOk;
 
         /* Logout the user */
-        $scope.logout = function () {
+        this.logout = function () {
             toaster.pop('success', "Logged out successfully");
             Auth.logout();
-            $location.path('/home');
+            $state.go('main');
         }
 
-    });
+    }
+}
+
+angular.module('yoFireAuthStoreApp')
+    .controller('NavbarController', NavbarController);

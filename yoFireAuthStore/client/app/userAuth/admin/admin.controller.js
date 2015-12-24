@@ -6,8 +6,7 @@
     /* Reference the main angular module */
     angular.module('yoFireAuthStoreApp')
         /* Define the AdminCtrl Controller */
-        .controller('AdminCtrl', function ($scope, Auth, toaster, $location) {
-
+        .controller('AdminCtrl', function ($scope, Auth, toaster, $state) {
 
             // Make sure the user is an Admin before showing this page
             if (!Auth.isAdmin()) {
@@ -15,18 +14,18 @@
                 // See if they are signed In
                 if (!Auth.signedIn()) {
                     // Not logged in, go to the login page
-                    $location.path("/login");
+                    $state.go('login');
                 } else {
                     // Not authorized for this page; go back to the store
-                    $location.path("/store");
+                    $state.go('main')
                 }
             }
 
             // Provide access to the list of user profiles
             $scope.users = Auth.all;
 
-
-        });
+        }
+    );
 
 }());
 /* Close the IIFE */

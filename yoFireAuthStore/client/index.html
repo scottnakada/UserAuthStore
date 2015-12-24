@@ -9,10 +9,10 @@
 <html class="no-js"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <base href="/">
     <title></title>
-    <meta name="description" content="Yeoman Firebase User Authorization Shopping Cart Demo">
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(client) app/vendor.css -->
@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="app/app.css">
     <!-- injector:css -->
     <link rel="stylesheet" href="app/app.css">
-    <link rel="stylesheet" href="app/home/home.css">
+    <link rel="stylesheet" href="app/main/main.css">
     <link rel="stylesheet" href="app/shoppingCart/cart/cart.css">
     <link rel="stylesheet" href="app/shoppingCart/editProduct/editProduct.css">
     <link rel="stylesheet" href="app/shoppingCart/products/products.css">
@@ -34,18 +34,20 @@
     <link rel="stylesheet" href="app/userAuth/changePass/changePass.css">
     <link rel="stylesheet" href="app/userAuth/login/login.css">
     <link rel="stylesheet" href="app/userAuth/register/register.css">
+    <link rel="stylesheet" href="components/footer/footer.css">
     <link rel="stylesheet" href="components/modal/modal.css">
     <!-- endinjector -->
     <!-- endbuild -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
 </head>
 <body ng-app="yoFireAuthStoreApp">
 <!--[if lt IE 7]>
-<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please
-    <a href="http://browsehappy.com/">upgrade
-        your browser</a> to improve your experience.</p>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<div ng-include="'components/navbar/navbar.html'"></div>
+<!-- Add your site or application content here -->
+<navbar></navbar>
 
 <!-- Toaster Notifications Window -->
 <toaster-container toaster-options="{'time-out': 3000, 'close-button':true}">
@@ -59,22 +61,13 @@
     </div>
 </header>
 
-<!-- Add your site or application content here -->
 <div class="row">
     <div ui-view="">
 
     </div>
 </div>
 
-<div class="row">
-    <footer class="footer">
-        <div class="container">
-            <p>
-                <a href="http://www.quickstartprototypes.com">Quickstart Prototypes</a> |
-                <a href="mailTo:scottnakada@gmail.com">scottnakada@gmail.com</a></p>
-        </div>
-    </footer>
-</div>
+<footer></footer>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
 <script>
@@ -88,7 +81,7 @@
         a.async = 1;
         a.src = g;
         m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-XXXXX-X');
     ga('send', 'pageview');
@@ -112,18 +105,15 @@
 <script src="bower_components/angularjs-toaster/toaster.js"></script>
 <script src="bower_components/firebase/firebase.js"></script>
 <script src="bower_components/angularfire/dist/angularfire.js"></script>
-<script src="bower_components/moment/moment.js"></script>
-<script src="bower_components/angular-moment/angular-moment.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
-
-
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <!-- build:js(.tmp) app/app.js -->
-
 <script src="app/app.js"></script>
 <!-- injector:js -->
-<script src="app/home/home.controller.js"></script>
-<script src="app/home/home.js"></script>
+<script src="components/util/util.module.js"></script>
+<script src="app/userAuth/admin/admin.js"></script>
+<script src="app/main/main.js"></script>
 <script src="app/shoppingCart/cart/cart.controller.js"></script>
 <script src="app/shoppingCart/cart/cart.js"></script>
 <script src="app/shoppingCart/dataService/dataService.service.js"></script>
@@ -134,7 +124,7 @@
 <script src="app/shoppingCart/store/store.controller.js"></script>
 <script src="app/shoppingCart/store/store.js"></script>
 <script src="app/userAuth/admin/admin.controller.js"></script>
-<script src="app/userAuth/admin/admin.js"></script>
+<script src="app/main/main.controller.js"></script>
 <script src="app/userAuth/auth/auth.service.js"></script>
 <script src="app/userAuth/changePass/changePass.controller.js"></script>
 <script src="app/userAuth/changePass/changePass.js"></script>
@@ -142,8 +132,12 @@
 <script src="app/userAuth/login/login.js"></script>
 <script src="app/userAuth/register/register.controller.js"></script>
 <script src="app/userAuth/register/register.js"></script>
+<script src="components/footer/footer.directive.js"></script>
 <script src="components/modal/modal.service.js"></script>
 <script src="components/navbar/navbar.controller.js"></script>
+<script src="components/navbar/navbar.directive.js"></script>
+<script src="app/app.constant.js"></script>
+<script src="components/util/util.service.js"></script>
 <!-- endinjector -->
 <!-- endbuild -->
 </body>

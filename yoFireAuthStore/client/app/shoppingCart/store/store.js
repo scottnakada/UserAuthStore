@@ -1,16 +1,14 @@
 'use strict';
 
-/* Reference the main angular module */
 angular.module('yoFireAuthStoreApp')
-    /* Configure a route for this function */
-    .config(function ($stateProvider) {
-        $stateProvider
-            .state('store', {
-                url: '/store',
-                templateUrl: 'app/shoppingCart/store/store.html',
-                controller: 'StoreCtrl'
-            });
-    });
+  .config(function ($stateProvider) {
+    $stateProvider
+      .state('store', {
+        url: '/store',
+        templateUrl: 'app/shoppingCart/store/store.html',
+        controller: 'StoreCtrl'
+      });
+  });
 
 //----------------------------------------------------------------
 // store (contains the products)
