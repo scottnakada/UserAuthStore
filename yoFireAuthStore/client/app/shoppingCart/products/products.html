@@ -73,11 +73,11 @@
                     ng-disabled="cart.getTotalCount(product.sku) < 1">
                     <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> remove from cart
                 </button>
-                <button
-                    class="btn btn-block"
-                    onclick="window.location.href='/store'">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> back to store
-                </button>
+                <a ui-sref="store">
+                    <button class="btn btn-block">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> back to store
+                    </button>
+                </a>
             </div>
         </div>
     </div>

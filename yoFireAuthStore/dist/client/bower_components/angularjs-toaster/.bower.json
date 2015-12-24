@@ -22,6 +22,6 @@
     "commit": "772cc6335b079ccb8089fb2f44b2595d9346215d"
   },
   "_source": "git://github.com/jirikavi/AngularJS-Toaster.git",
-  "_target": "*",
+  "_target": "~0.4.18",
   "_originalSource": "angularjs-toaster"
 }

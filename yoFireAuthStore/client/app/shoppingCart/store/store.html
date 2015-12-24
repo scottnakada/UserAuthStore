@@ -21,7 +21,7 @@
     <table class="table table-bordered">
         <tr class="well">
             <td class="tdRight" colspan="4">
-                <a href="/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
+                <a ui-sref="cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
                     <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
                     <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency}}</b>
                 </a>

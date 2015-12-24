@@ -7,7 +7,7 @@
     <h4>
         <br>
 
-        <div ng-hide="signedIn();">
+        <div ng-hide="main.signedIn();">
             <ol>
                 <li>
                     Please create an account:
@@ -28,7 +28,7 @@
                 </li>
             </ol>
         </div>
-        <div ng-show="signedIn();">
+        <div ng-show="main.signedIn();">
             <ol>
                 <li>
                     Store<a ui-sref="store">
@@ -47,7 +47,7 @@
                     </a>
                     <br><br>
                 </li>
-                <li ng-show="isManager()">
+                <li ng-show="main.isManager()">
                     Edit the Products:
                     <a ui-sref="editProduct">
                         <button class="btn btn-info">
@@ -56,7 +56,7 @@
                     </a>
                     <br><br>
                 </li>
-                <li ng-show="isAdmin()">
+                <li ng-show="main.isAdmin()">
                     Administer Accounts:
                     <a ui-sref="admin">
                         <button class="btn btn-info">
@@ -65,7 +65,7 @@
                     </a>
                     <br><br>
                 </li>
-                <li ng-show="changePassOk()">
+                <li ng-show="main.changePassOk()">
                     Change the password:
                     <a ui-sref="changePass">
                         <button class="btn btn-info">
@@ -77,7 +77,7 @@
                 </li>
                 <li>
                     Logout when done:
-                    <a ui-sref="home" ng-click="logout()">
+                    <a ui-sref="main" ng-click="main.logout()">
                         <button class="btn btn-info">
                             <i class="fa fa-sign-out"></i> Logout
                         </button>
